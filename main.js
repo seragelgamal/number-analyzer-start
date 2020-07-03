@@ -19,3 +19,30 @@ function analyzeNumber() {
 
 
 // Analyze Functions
+function getSign(num) {
+    if (num > 0) {
+        return 'pos';
+    } else if (num < 0) {
+        return 'neg';
+    } else {
+        return 'zero';
+    }
+}
+
+function evenOrOdd(num) {
+    if (num % 2 == 0) {
+        return 'even';
+    } else if ((num % 2 == 1) || (num % 2 == -1)) {
+        return 'odd';
+    } else {
+        return 'n/a'
+    }
+}
+
+function multipleOf10(num) {
+    if (num % 10 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
